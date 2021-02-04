@@ -17,6 +17,10 @@ const photos = [
   {
     name: 'Photo 3',
     url: 'https://images.foxtv.com/static.fox13news.com/www.fox13news.com/content/uploads/2019/09/764/432/Getty_travisscott_111218_1542050256534_6390296_ver1.0_640_360.jpg?ve=1&tl=1'
+  },
+  {
+    name: 'Photo 4',
+    url: 'https://blogmedia.evbstatic.com/wp-content/uploads/wpmulti/sites/8/2019/10/How-to-organise-music-concert.jpg'
   }
 ]
 
@@ -28,12 +32,13 @@ class App extends Component {
       dots: true,
       fade: true,
       infinite: true,
-      speed: 500,
-      slidesToShow: 1,
+      // speed: 500,
+      // slidesToShow: 1,
       arrows: false,
-      slidesToSroll: 1,
+      // slidesToSroll: 1,
       autoplay: true,
       autoplaySpeed: 10000,
+      autoplayHoverPause: false,
       className: 'slides'
     }
   return (
