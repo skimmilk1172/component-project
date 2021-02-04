@@ -7,7 +7,7 @@ function Button () {
     alert('Your button is working!')
   };
   return (
-    <button onCLick={clickMe}>
+    <button className='gradient' onCLick={clickMe}>
       TRY IT NOW
     </button>
   )
