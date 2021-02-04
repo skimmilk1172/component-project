@@ -5,8 +5,8 @@ import { slide as Menu } from 'react-burger-menu';
 function Header () {
   return (
     <div className='menu'>
-      <header>
-        <h1 className='title'>EXP|CON</h1>
+      <header className='title'>
+        <h1 className>EXP|CON</h1>
       </header>
       <Menu>
       <a className="menu-item" href="/">

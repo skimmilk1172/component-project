@@ -4,11 +4,12 @@ import Header from './components/Header';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import Slider from 'react-slick';
+import BodyText from './components/BodyText';
 
 const photos = [
   {
     name: 'Photo 1',
-    url: 'https://i.guim.co.uk/img/media/fbb5cc6e7642788d1b1fd2b0baab1641c06fc844/0_0_5760_3840/master/5760.jpg?width=700&quality=85&auto=format&fit=max&s=4accb731006caccd64710e863df7f5ad'
+    url: 'https://media.vanityfair.com/photos/597663e8fe060e64db80eb57/master/pass/Justin-Bieber-Tour.jpg'
   },
   {
     name: 'Photo 2',
@@ -16,10 +17,6 @@ const photos = [
   },
   {
     name: 'Photo 3',
-    url: 'https://images.foxtv.com/static.fox13news.com/www.fox13news.com/content/uploads/2019/09/764/432/Getty_travisscott_111218_1542050256534_6390296_ver1.0_640_360.jpg?ve=1&tl=1'
-  },
-  {
-    name: 'Photo 4',
     url: 'https://blogmedia.evbstatic.com/wp-content/uploads/wpmulti/sites/8/2019/10/How-to-organise-music-concert.jpg'
   }
 ]
@@ -53,6 +50,7 @@ class App extends Component {
           )
         })}
       </Slider>
+      <BodyText />
     </div>
   );
 }
