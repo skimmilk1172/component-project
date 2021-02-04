@@ -1,10 +1,11 @@
 import React, {Component} from 'react'
-import './App.css';
+import './App.scss';
 import Header from './components/Header';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import Slider from 'react-slick';
 import BodyText from './components/BodyText';
+import Button from './components/Button';
 
 const photos = [
   {
@@ -41,7 +42,7 @@ class App extends Component {
   return (
     <div className="App">
       <Header />
-      <Slider {...settings}>
+      <Slider className='slide' {...settings}>
         {photos.map((photo) => {
           return(
             <div>
@@ -51,6 +52,7 @@ class App extends Component {
         })}
       </Slider>
       <BodyText />
+      <Button />
     </div>
   );
 }

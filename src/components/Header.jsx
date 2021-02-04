@@ -4,10 +4,10 @@ import { slide as Menu } from 'react-burger-menu';
 
 function Header () {
   return (
-    <div className='menu'>
-      <header className='title'>
-        <h1 className>EXP|CON</h1>
-      </header>
+    <section className='menu'>
+      <div className='title'>
+        <h1>EXP|CON</h1>
+      </div>
       <Menu>
       <a className="menu-item" href="/">
         WHAT IS IT
@@ -19,7 +19,7 @@ function Header () {
         PRICING
       </a>
       </Menu>
-    </div>
+    </section>
   )
 }
 
