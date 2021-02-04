@@ -1,24 +1,29 @@
-
+.menu {
+  position: relative;
+  background-color: transparent;
+}
 
 .title {
   display: flex;
   justify-content: start;
   margin-left: 3.7em;
   margin-top: 1.75em;
+  color: black;
 }
 
 /* Position and sizing of burger button */
 .bm-burger-button {
-  position: fixed;
+  position: absolute;
   width: 36px;
   height: 30px;
   left: 60px;
   top: 60px;
+  transition: fill .5s cubic-bezier(.455,.03,.515,.955),opacity .5s cubic-bezier(.455,.03,.515,.955),transform .5s cubic-bezier(.19,1,.22,1);
 }
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-  background: #373a47;
+  background: white;
 }
 
 /* Color/shape of burger icon bars on hover*/
