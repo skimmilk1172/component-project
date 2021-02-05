@@ -1,14 +1,108 @@
 .menu {
   position: relative;
   background-color: transparent;
-}
+  
+  .title {
+      color: white;
+      position: absolute;
+      z-index: 100;
+  }
 
-.title {
-    color: white;
+  .open {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: pink;
     position: absolute;
-    z-index: 100;
+    z-index: 1000;
+    border-radius: 0 50% 50% 50%;
+    animation: burgerBar ease 3s;
+    -webkit-animation: burgerBar ease 2s;
+    -moz-animation: burgerBar ease 2s;
+    -o-animation: burgerBar ease 2s;
+    -ms-animation: burgerBar ease 2s;
 
+    .menu_open {
+      display: flex;
+      flex-direction: column;
+    }  
+  }
+  
+}  
+  
+// fade   in animation
+  @keyframes burgerBar {
+  0% {  
+    // transform: translate3d(0, 0, 0);
+    transform: scale(1, 1);
+    transform-origin: top left;
+    padding: 1em;
+  }
+  100% {
+    // transform: translate3d(100px, 100px, 0);
+    transform: scale(2, 2);
+    transform-origin: top left;
+    padding: 3em;
+  }
 }
+@-moz-keyframes burgerBar {
+
+  0% {
+    // transform: translate3d(0, 0, 0);
+    transform: scale(1, 1);
+    transform-origin: top left;
+    padding: 1em;
+  }
+  100% {
+    // transform: translate3d(100px, 100px, 0);
+    transform: scale(2, 2);
+    transform-origin: top left;
+    padding: 3em;
+  }
+}
+@-webkit-keyframes burgerBar {
+  0% {
+    // transform: translate3d(0, 0, 0);
+    transform: scale(1, 1);
+    transform-origin: top left;
+    padding: 1em;
+  }
+  100% {
+    // transform: translate3d(100px, 100px, 0);
+    transform: scale(2, 2);
+    transform-origin: top left;
+    padding: 3em;
+  }
+}
+@-o-keyframes burgerBar {
+  0% {
+    // transform: translate3d(0, 0, 0);
+    transform: scale(1, 1);
+    transform-origin: top left;
+    padding: 1em;
+  }
+  100% {
+    // transform: translate3d(100px, 100px, 0);
+    transform: scale(2, 2);
+    transform-origin: top left;
+    padding: 3em;
+  }
+}
+@-ms-keyframes burgerBar {
+  0% {
+    // transform: translate3d(0, 0, 0);
+    transform: scale(1, 1);
+    transform-origin: top left;
+    padding: 1em;
+  }
+  100% {
+    // transform: translate3d(100px, 100px, 0);
+    transform: scale(2, 2);
+    transform-origin: top left;
+    padding: 3em;
+  }
+}
+
 
 /* Position and sizing of burger button */
 .bm-burger-button {

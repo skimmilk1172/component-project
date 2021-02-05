@@ -62,30 +62,30 @@ App.css
  
 
  
-.slides .slick-prev,
-.slides .slick-next {
+.pics .slick-prev,
+.pics .slick-next {
   position: absolute;
   top: 50%;
   z-index: 1;
 }
 
 
-.slides {
+.pics {
   position: relative;
 }
 
-.slides .slick-prev,
-.slides .slick-next {
+.pics .slick-prev,
+.pics .slick-next {
   position: absolute;
   top: 50%;
   z-index:1;
 }
 
-.slides .slick-prev {
+.pics .slick-prev {
   left: 5%;
 }
 
-.slides .slick-next {
+.pics .slick-next {
   right: 5%;
 }
 
